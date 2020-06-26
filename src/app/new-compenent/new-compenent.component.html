@@ -1,5 +1,29 @@
-<div [style.color]="color">
-  The color of your PATATA is set to {{color}}
+<div class="Every">
+  <h2>The Profile</h2>
+  <div class="All">
+    <div class="theCard">
+      <hr>
+      <h4>Name : {{name}} </h4>
+      <hr>
+      <h5>Age : {{age}}  </h5>
+      <hr>
+      <h5>Job : {{job}} </h5>
+      <hr>
+      <p>Status : {{status}} </p>
+      <hr>
+    </div>
+    <div class="theInput">
+      <br>
+      <input [(ngModel)]="name" placeholder="Type your Name">
+      <br>
+      <br>
+      <input [(ngModel)]="age" placeholder="Type your Age">
+      <br>
+      <br>
+      <input [(ngModel)]="job" placeholder="Type your Job">
+      <br>
+      <br>
+      <input [(ngModel)]="status" placeholder="Type your Status">
+    </div>
+  </div>
 </div>
-<input #theInput id="thePATATA" (input)="yeahPATATA(theInput.value)" type="text" class="colorType" placeholder="Set a Color">
-<button (click)="patataTime()" class="btn-PATATA">Reset Color</button>

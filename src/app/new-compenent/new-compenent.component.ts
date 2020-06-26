@@ -7,17 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewCompenentComponent implements OnInit {
 
-  color = 'Black' ;
-  defaultColor = 'Black'
-
-  yeahPATATA(theColor) {
-    this.color = theColor
-  }
-
-  patataTime() {
-    this.color = this.defaultColor
-    document.getElementById("thePATATA").innerText=this.defaultColor
-  }
+  name = ""
+  age = ""
+  job = ""
+  status =""
 
   constructor() { }
 

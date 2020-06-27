@@ -18,6 +18,12 @@ h2 {
   background-position-x: center;
   font-size: larger;
 }
+.profilePicture {
+  padding-left: 31%;
+}
+img {
+  border-radius: 150px;
+}
 .theInput {
   padding-left: 38% ;
   background-attachment: fixed;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Text } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({
   selector: 'app-new-compenent',
@@ -11,6 +12,7 @@ export class NewCompenentComponent implements OnInit {
   age = ""
   job = ""
   status =""
+  photoURL = ""
 
   constructor() { }
 

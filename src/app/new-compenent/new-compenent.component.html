@@ -2,16 +2,23 @@
   <h2>The Profile</h2>
   <div class="All">
     <div class="theCard">
-      <hr>
-      <h4>Name : {{name}} </h4>
-      <hr>
-      <h5>Age : {{age}}  </h5>
-      <hr>
-      <h5>Job : {{job}} </h5>
-      <hr>
-      <p>Status : {{status}} </p>
-      <hr>
-    </div>
+      <div class="profilePicture">
+        <img src="{{photoURL}}">
+        <input [(ngModel)]="photoURL" placeholder="Enter your picture's URL">
+      </div>
+      <div class="informations">
+        <hr>
+        <h4>Name : {{name}} </h4>
+        <hr>
+        <h5>Age : {{age}}  </h5>
+        <hr>
+        <h5>Job : {{job}} </h5>
+        <hr>
+        <p>Status : {{status}} </p>
+        <hr>
+      </div>
+      </div>
+
     <div class="theInput">
       <br>
       <input [(ngModel)]="name" placeholder="Type your Name">

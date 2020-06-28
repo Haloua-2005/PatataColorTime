@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-son',
@@ -7,10 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SonComponent implements OnInit {
   @Input() colorChanger: string;
+  @Output() theNewColorChanger = new EventEmitter();
+  myFavoriteColor = 'cyan'
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ChangeTheColor(){
+    this.theNewColorChanger.emit(this.myFavoriteColor);
   }
 
 }

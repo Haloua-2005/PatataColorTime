@@ -8,9 +8,14 @@ import { getCurrencySymbol } from '@angular/common';
 })
 export class FatherComponent implements OnInit {
   color = '';
+  ColorOfMySon = ''
 
   changeColor(theColor) {
     this.color=theColor
+  }
+
+  ColorForDad(MyColor) {
+    this.ColorOfMySon = MyColor
   }
 
   constructor() { }

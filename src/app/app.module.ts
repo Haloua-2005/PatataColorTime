@@ -11,7 +11,8 @@ import { PATATAColorTimeComponent } from './patata-color-time/patata-color-time.
 import { CVcompenentComponent } from './cvcompenent/cvcompenent.component';
 import { ListComponent } from './list/list.component';
 import { Item1Component } from './item1/item1.component';
-import { DetailqComponent } from './detailq/detailq.component'
+import { DetailqComponent } from './detailq/detailq.component';
+import { AttributeDirectivesComponent } from './directives/attribute-directives/attribute-directives.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DetailqComponent } from './detailq/detailq.component'
     CVcompenentComponent,
     ListComponent,
     Item1Component,
-    DetailqComponent
+    DetailqComponent,
+    AttributeDirectivesComponent
   ],
   imports: [
     BrowserModule,

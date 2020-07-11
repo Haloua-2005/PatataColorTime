@@ -1,0 +1,9 @@
+input {
+  margin: 10px;
+}
+
+.Para {
+  border: 1px black solid;
+  background-color: black;
+  padding: 15px;
+}

@@ -1,0 +1,19 @@
+<input type="text" [(ngModel)]="color"  placeholder="Enter the Color">
+<input type="number" [(ngModel)]="size" placeholder="Enter the Size">
+<div class="row">
+  <div class="mid-col-6">
+    <ul> ~~| Fonts |~~
+      <li (click)="firstFont()" >Friday13</li>
+      <li (click)="secondFont()" >Times New Roman</li>
+      <li (click)="thirdFont()" >Fantasy</li>
+    </ul>
+  </div>
+  <div style="padding-left: 25%;" class="mid-col-6">
+    <p class="Para" [ngStyle]="{
+      color: color,
+      fontSize: size,
+      fontFamily: font
+    }"
+    >Personilise your Paragraph</p>
+  </div>
+</div>
